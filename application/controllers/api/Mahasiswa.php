@@ -16,6 +16,8 @@ class Mahasiswa extends CI_Controller
       parent::__construct();
       $this->__resTraitConstruct();
       $this->load->model('Mahasiswa_model','Mahasiswa');
+
+      $this->methods['index_get']['limit'] = 10;
    }
 
    public function index_get()
